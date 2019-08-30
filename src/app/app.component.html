@@ -1,21 +1,55 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<app-cabecalho-governo-federal></app-cabecalho-governo-federal>
 
-<router-outlet></router-outlet>
+<section class="vbox" *ngIf="isAutenticado && isTemplate">
+
+  <app-cabecalho-suframa></app-cabecalho-suframa>
+
+  <section>
+    <section class="hbox stretch">
+
+      <aside class="bg-white aside-md hidden-print" id="nav">
+          <section class="vbox" style="padding-top: 0px;">
+              <section class="w-f scrollable">
+                <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px"
+                  data-railopacity="0.2">
+                  <app-menu class="w-f scrollable"></app-menu>
+                </div>
+              </section>
+              <app-rodape-menu></app-rodape-menu>
+          </section>
+      </aside>
+
+      <section id="content">
+        <section class="hbox stretch">
+          <section>
+          <section class="vbox rvfs-4" data-rvfs="4"  style="padding-top: 0px;">
+            <section class="scrollable">
+              <div class="slim-scroll padder-h" data-height="auto" data-disable-fade-out="true" data-distance="0"
+                data-size="10px" data-railopacity="0.2">
+
+                <app-template></app-template>
+
+              </div>
+            </section>
+          </section>
+          </section>
+        </section>
+        <a href="#" class="hide nav-off-screen-block" data-toggle-class="nav-off-screen" data-target="#nav"></a>
+      </section>
+    </section>
+
+  </section>
+
+</section>
+
+
+<section *ngIf="!isTemplate">
+    <app-template></app-template>
+  <app-rodape-governo-federal></app-rodape-governo-federal>
+</section>
+
+
+
+
+
+

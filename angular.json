@@ -28,7 +28,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/styles/styles.css",
+              "src/assets/styles/normalize.css",
+              "src/assets/styles/animate.css",
+              "src/assets/styles/font-awesome.css",
+              "src/assets/styles/bootstrap-datetimepicker.css",
+              "src/assets/styles/main.css",
+              "src/assets/styles/vendor.css",
+              "src/assets/styles/styles-externo.css",
+              "src/assets/styles/base.css",
+              "src/assets/styles/angular-calendar.css"
             ],
             "scripts": []
           },
