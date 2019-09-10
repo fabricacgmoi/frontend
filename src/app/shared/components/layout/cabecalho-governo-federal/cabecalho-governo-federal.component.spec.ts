@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CabecalhoGovernoFederalComponent } from './cabecalho-governo-federal.component';
 
-describe('CabecalhoGovernoFederalComponent', () => {
+xdescribe('CabecalhoGovernoFederalComponent', () => {
   let component: CabecalhoGovernoFederalComponent;
   let fixture: ComponentFixture<CabecalhoGovernoFederalComponent>;
 
