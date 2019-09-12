@@ -15,6 +15,7 @@ export class CabecalhoSuframaComponent implements OnInit {
   logoff(){
     localStorage.clear();
     location.replace("/login");
+    //return "a";
   }
 
 }

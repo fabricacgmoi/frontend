@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SelecionarSistemaComponent } from './selecionar-sistema.component';
 
-xdescribe('SelecionarSistemaComponent', () => {
+describe('SelecionarSistemaComponent', () => {
   let component: SelecionarSistemaComponent;
   let fixture: ComponentFixture<SelecionarSistemaComponent>;
 

@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import {Router} from "@angular/router";
+//import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -9,8 +9,8 @@ import {Router} from "@angular/router";
 export class LoginComponent implements OnInit {
 
   @Output() onLogon = new EventEmitter;
-  
-  constructor(private router: Router) { }
+
+  constructor() { }
 
   ngOnInit() {
   }

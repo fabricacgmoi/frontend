@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewEncapsulation, Input, Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
-import { ActivatedRoute } from '@angular/router';
-import { ApplicationService } from "./core/services/application.service";
-import { environment } from '../environments/environment';
+// import { ActivatedRoute } from '@angular/router';
+// import { ApplicationService } from "./core/services/application.service";
+// import { environment } from '../environments/environment';
 
 
 @Component({
@@ -17,8 +17,8 @@ export class AppComponent {
     public constructor(
       private titleService: Title,
       private Meta: Meta,
-      private applicationService: ApplicationService,
-      private route: ActivatedRoute
+      // private applicationService: ApplicationService,
+      // private route: ActivatedRoute
     ) { }
 
 
@@ -37,7 +37,7 @@ export class AppComponent {
     @Input()
     authenticated: boolean;
 
-    ngOnInit() 
+    ngOnInit()
     {
       this.Meta.addTag({ name: 'description', content: 'Framework Suframa' });
       this.Meta.addTag({ name: 'keywords', content: 'framework, Suframa, Governo Federal' });
@@ -59,11 +59,7 @@ export class AppComponent {
       }
     }
 
-    onLogout() {
-    }
-
-    
-
-
+    // onLogout() {
+    // }
 
 }

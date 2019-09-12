@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RodapeMenuComponent } from './rodape-menu.component';
 
-xdescribe('RodapeMenuComponent', () => {
+describe('RodapeMenuComponent', () => {
   let component: RodapeMenuComponent;
   let fixture: ComponentFixture<RodapeMenuComponent>;
 

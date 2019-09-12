@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 //import { HttpClient  } from '@angular/common/http';
 
 import { ConverterService } from './converter.service';
-import { environment } from '../../../environments/environment';
+//import { environment } from '../../../environments/environment';
 
 
 @Injectable()
@@ -14,7 +14,7 @@ export class ApplicationService {
 		private converterService: ConverterService//,
 		//private http: HttpClient,
 	) { }
-	
+
 	/*
 	createAuthorizationHeader(): HttpHeaders {
 		if (sessionStorage.getItem('token') && !this.token) {
@@ -47,13 +47,13 @@ export class ApplicationService {
 	get<T>(service: string, data?: any) {
         let url = environment.serviceUrl + service;
 
-        if (data) {        
+        if (data) {
 			if (data !== Object(data)) {
 				url += '/' + data;
 			} else {
 				url += '?' + this.converterService.objectToQueryString(data);
             }
-            
+
 		}
 
 		return this.http.get<T>(url, {
@@ -79,7 +79,7 @@ export class ApplicationService {
 			headers: this.createAuthorizationHeader()
 		});
 	}
-	
+
 	logout<T>() {
 		let url = environment.ssologout;
 

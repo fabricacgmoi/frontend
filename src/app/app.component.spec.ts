@@ -7,9 +7,10 @@ import { MenuComponent } from './shared/components/layout/menu/menu.component';
 import { RodapeGovernoFederalComponent } from './shared/components/layout/rodape-governo-federal/rodape-governo-federal.component';
 import { RodapeMenuComponent } from './shared/components/layout/rodape-menu/rodape-menu.component';
 import { TemplateComponent } from './shared/components/layout/template/template.component';
+import { By } from '@angular/platform-browser';
 
 
-xdescribe('AppComponent', () => {
+describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
@@ -30,13 +31,17 @@ xdescribe('AppComponent', () => {
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.query;
-    expect(app).toHaveBeenCalled();
+    fixture.detectChanges();
+    expect(app).toBeTruthy();
   });
 
   // it(`should have as title 'frameworksuframa'`, () => {
   //   const fixture = TestBed.createComponent(AppComponent);
   //   const app = fixture.debugElement.componentInstance;
-  //   expect(app.title).toEqual('Framework Suframa');
+
+  //   //let spy = spyOn(app, 'setTitle');
+
+  //   expect(app.titleService.).toContain("Framework Suframa");
   // });
 
   // it('should render title in a h1 tag', () => {

@@ -12,14 +12,14 @@ export class SelecionarSistemaComponent implements OnInit {
   ngOnInit() {
   }
 
-  click(){ 
+  click(){
     localStorage.setItem("isTemplate", "true");
     window.location.replace("/");
   }
 
-  logoff(){
-    localStorage.clear();
-    window.location.replace("/login");
-  }
+  // logoff(){
+  //   localStorage.clear();
+  //   window.location.replace("/login");
+  // }
 
 }
