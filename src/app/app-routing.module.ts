@@ -7,6 +7,7 @@ import {SelecionarSistemaComponent} from './modules/default/selecionar-sistema/s
 import {SegurancaModule} from './modules/seguranca/seguranca.module';
 import {LoginComponent} from './modules/seguranca/authentication/login/login.component';
 import {EsqueciMinhaSenhaComponent} from './modules/seguranca/authentication/esqueci-minha-senha/esqueci-minha-senha.component';
+<<<<<<< HEAD
 import { CadastroBasicoComponent } from './modules/default/cadastro-basico/cadastro-basico.component';
 import { CadastroAbasComponent } from './modules/default/cadastro-abas/cadastro-abas.component';
 import { CadastroModalComponent } from './modules/default/cadastro-modal/cadastro-modal.component';
@@ -15,11 +16,14 @@ import { AlterarBasicoComponent } from './modules/default/alterar-basico/alterar
 import { AlterarAbasComponent } from './modules/default/alterar-abas/alterar-abas.component';
 import { AlterarModalComponent } from './modules/default/alterar-modal/alterar-modal.component';
 import { AlterarWizardComponent } from './modules/default/alterar-wizard/alterar-wizard.component';
+=======
+>>>>>>> 8804c95f290cc8ffff0c0480963d665ecb84096b
 
 
 const routes: Routes = [
 
   { path: '', component: IndexComponent, pathMatch: 'full' },
+<<<<<<< HEAD
 
   { path: 'login', component: LoginComponent, pathMatch: 'full' },
   { path: 'esqueci-minha-senha', component: EsqueciMinhaSenhaComponent, pathMatch: 'full' },
@@ -34,6 +38,11 @@ const routes: Routes = [
   { path: 'alterar-abas', component: AlterarAbasComponent, pathMatch: 'full' },
   { path: 'alterar-modal', component: AlterarModalComponent, pathMatch: 'full' },
   { path: 'alterar-wizard', component: AlterarWizardComponent, pathMatch: 'full' },
+=======
+  { path: 'login', component: LoginComponent, pathMatch: 'full' },
+  { path: 'esqueci-minha-senha', component: EsqueciMinhaSenhaComponent, pathMatch: 'full' },
+  { path: 'selecionar-sistema', component: SelecionarSistemaComponent, pathMatch: 'full' }
+>>>>>>> 8804c95f290cc8ffff0c0480963d665ecb84096b
 
 
 ];
