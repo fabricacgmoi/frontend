@@ -1,0 +1,75 @@
+<section class="scrollable">
+  <div class="slim-scroll padder-h" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px"
+    data-railopacity="0.2">
+    <div class="row m-b-md">
+      <div class="col-sm-6">
+        <h1 class="m-b-xs text-black">Cadastro Modal</h1>
+
+        <small>Tela de cadastro em janela modal</small>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+
+        <section class="panel panel-default">
+          <header class="panel-heading">
+            <h2 class="panel-title h5">Modal</h2>
+          </header>
+          <article class="panel-body">
+            <a class="btn btn-success" data-toggle="modal" href="#cadastroModal"><i class="fa fa-plus"></i> Cadastro</a>
+          </article>
+        </section>
+        <div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-labelledby="cadastroModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="cadastroModalLabel">Cadastro de Município</h4>
+              </div>
+              <form class="form-horizontal" action="crud.html" method="GET" role="form" data-parsley-validate="">
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="municipio" class="col-sm-3 control-label required">Município</label>
+                    <div class="col-sm-9">
+                      <select name="municipio" id="municipio" class="form-control input-m-sm" required="">
+                        <option value="">Selecione uma Opção</option>
+                        <option value="1">Opção 1</option>
+                        <option value="2">Opção 2</option>
+                        <option value="3">Opção 3</option>
+                        <option value="4">Opção 4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="line line-dashed b-b line-lg pull-in"></div>
+                  <div class="form-group">
+                    <label for="categoria" class="col-sm-3 control-label required">Categoria</label>
+                    <div class="col-sm-9">
+                      <input type="text" name="categoria" id="categoria" class="form-control input-m-lg"
+                        placeholder="Digite o nome da categoria" required="">
+                    </div>
+                  </div>
+                  <div class="line line-dashed b-b line-lg pull-in"></div>
+                  <div class="form-group m-n">
+                    <label for="coordenacao" class="col-sm-3 control-label required">Coordenação</label>
+                    <div class="col-sm-9">
+                      <input type="text" name="coordenacao" id="coordenacao" class="form-control input-m-lg"
+                        placeholder="Digite o nome da coordenação" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#" class="btn btn-default" data-dismiss="modal"><i class="fa fa-long-arrow-left"></i>
+                    Cancelar</a>
+                  <button type="submit" class="btn btn-s-md btn-primary"><i class="fa fa-save"></i> Salvar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

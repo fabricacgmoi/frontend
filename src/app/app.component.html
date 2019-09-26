@@ -1,0 +1,55 @@
+<app-cabecalho-governo-federal></app-cabecalho-governo-federal>
+
+<section class="vbox" *ngIf="isAutenticado && isTemplate">
+
+  <app-cabecalho-suframa></app-cabecalho-suframa>
+
+  <section>
+    <section class="hbox stretch">
+
+      <aside class="bg-white aside-md hidden-print" id="nav">
+          <section class="vbox" style="padding-top: 0px;">
+              <section class="w-f scrollable">
+                <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px"
+                  data-railopacity="0.2">
+                  <app-menu class="w-f scrollable"></app-menu>
+                </div>
+              </section>
+              <app-rodape-menu></app-rodape-menu>
+          </section>
+      </aside>
+
+      <section id="content">
+        <section class="hbox stretch">
+          <section>
+          <section class="vbox rvfs-4" data-rvfs="4"  style="padding-top: 0px;">
+            <section class="scrollable">
+              <div class="slim-scroll padder-h" data-height="auto" data-disable-fade-out="true" data-distance="0"
+                data-size="10px" data-railopacity="0.2">
+
+                <app-template></app-template>
+
+              </div>
+            </section>
+          </section>
+          </section>
+        </section>
+        <a href="#" class="hide nav-off-screen-block" data-toggle-class="nav-off-screen" data-target="#nav"></a>
+      </section>
+    </section>
+
+  </section>
+
+</section>
+
+
+<section *ngIf="!isTemplate">
+    <app-template></app-template>
+  <app-rodape-governo-federal></app-rodape-governo-federal>
+</section>
+
+
+
+
+
+

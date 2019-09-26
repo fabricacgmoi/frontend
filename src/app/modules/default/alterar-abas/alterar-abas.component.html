@@ -1,0 +1,206 @@
+<section class="scrollable">
+  <div class="slim-scroll padder-h" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px"
+    data-railopacity="0.2">
+    <div class="row m-b-md">
+      <div class="col-sm-6">
+        <h1 class="m-b-xs text-black">Alterar com Abas</h1>
+
+        <small>Tela de alteraçao de cadastro com abas</small>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+
+        <section class="panel panel-default">
+          <header class="panel-heading">
+            <div class="pull-right">
+              <a href="crud.html" class="btn btn-default btn-sm"><i class="fa fa-long-arrow-left"></i> Cancelar</a>
+            </div>
+            <h2 class="panel-title h5">Formulário</h2>
+          </header>
+          <header class="panel-heading">
+            <ul class="nav nav-tabs" data-tab-state="">
+              <li class="active">
+                <a href="#gerais" data-toggle="tab"><i class="fa fa-user text-muted"></i> Dados Gerais</a>
+              </li>
+              <li>
+                <a href="#documentos" data-toggle="tab">Documentos</a>
+              </li>
+              <li>
+                <a href="#outros" data-toggle="tab">Outros</a>
+              </li>
+            </ul>
+          </header>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="gerais">
+              <form class="form" action="crud.html" method="GET" role="form" data-parsley-validate="">
+                <article class="panel-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group m-n">
+                        <label for="categoria" class="control-label required">Categoria</label>
+                        <input type="text" name="categoria" value="Categoria b" id="categoria" class="form-control"
+                          placeholder="Digite o nome da categoria" required="">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group m-n">
+                        <label for="coordenacaoregional" class="control-label required">Coordenação Regional</label>
+                        <input type="text" name="coordenacaoregional" value="Brasília" id="coordenacaoregional"
+                          class="form-control" placeholder="Digite o nome da coordenação regional" required="">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group m-n">
+                        <label for="municipio" class="control-label required">Município</label>
+                        <select name="municipio" id="municipio" class="form-control" required="">
+                          <option value="">Selecione uma Opção</option>
+                          <option value="1">Opção 1</option>
+                          <option value="2">Opção 2</option>
+                          <option value="3" selected="">Opção 3</option>
+                          <option value="4">Opção 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <footer class="panel-footer b-t clearfix">
+                  <div class="pull-right">
+                    <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Salvar Dados
+                      Gerais</button>
+                  </div>
+                </footer>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="documentos">
+              <form class="form" action="crud.html" method="GET" role="form" data-parsley-validate="">
+                <article class="panel-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="registrogeral" class="control-label required">Registro Geral</label>
+                        <input type="text" name="registrogeral" value="00000" id="registrogeral" class="form-control"
+                          placeholder="Digite o registro geral" required="">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="cpf" class="control-label required">CPF</label>
+                        <input type="text" name="cpf" value="000.000.000-00" id="cpf" class="form-control cpf"
+                          placeholder="___.___.___-__" required="" maxlength="14" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="pispasep" class="control-label required">PIS/PASEP</label>
+                        <input type="text" name="pispasep" value="000.00000.00-0" id="pispasep" class="form-control pis"
+                          placeholder="___._____.__-_" required="" maxlength="14" autocomplete="off">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="line line-dashed b-b line-lg pull-in"></div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group m-n">
+                        <label for="cnpj" class="control-label required">CNPJ</label>
+                        <input type="text" name="cnpj" value="000.000.000/0000-00" id="cnpj" class="form-control cnpj"
+                          placeholder="___.___.___/____-__" required="" maxlength="19" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group m-n">
+                        <label for="responsavel" class="control-label required">Responsável</label>
+                        <select class="form-control" id="responsavel">
+                          <option value="">Selecione</option>
+                          <optgroup label="Gerentes">
+                            <option value="1">Hudson Neves</option>
+                          </optgroup>
+                          <optgroup label="Programadores">
+                            <option value="2" selected="">Bruno Batista</option>
+                            <option value="3">André Neves</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <footer class="panel-footer b-t clearfix">
+                  <div class="pull-right">
+                    <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Salvar
+                      Documentos</button>
+                  </div>
+                </footer>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="outros">
+              <form class="form" action="crud.html" method="GET" role="form" data-parsley-validate="">
+                <article class="panel-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="codigocadastro" class="control-label required">Código de Cadastro</label>
+                        <input type="text" name="codigocadastro" value="0000" id="codigocadastro" class="form-control"
+                          placeholder="Digite o código de cadastro" required="">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="departamento" class="control-label required">Departamento</label>
+                        <input type="text" name="departamento" value="Administrativo" id="departamento"
+                          class="form-control" placeholder="Digite o departamento" required="">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="registroidentificacao" class="control-label required">Registro de
+                          Identificação</label>
+                        <input type="text" name="registroidentificacao" value="00000000" id="registroidentificacao"
+                          class="form-control" placeholder="Digite o registro de identificação" required="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="line line-dashed b-b line-lg pull-in"></div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group m-n">
+                        <label class="control-label required">Opções de Marcação</label>
+                        <div>
+                          <div class="checkbox-inline i-checks">
+                            <label>
+                              <input type="checkbox" name="opcoes[marcacao]" value="1"
+                                data-parsley-errors-container="#opcoesmarcacao-errors" required=""><i></i> Opção 1
+                            </label>
+                          </div>
+                          <div class="checkbox-inline i-checks">
+                            <label>
+                              <input type="checkbox" name="opcoes[marcacao]" value="2" required=""><i></i> Opção 2
+                            </label>
+                          </div>
+                          <div class="checkbox-inline i-checks">
+                            <label>
+                              <input type="checkbox" name="opcoes[marcacao]" value="3" required="" checked=""><i></i>
+                              Opção 3
+                            </label>
+                          </div>
+                          <div id="opcoesmarcacao-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <footer class="panel-footer b-t clearfix">
+                  <div class="pull-right">
+                    <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Salvar
+                      Outros</button>
+                  </div>
+                </footer>
+              </form>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</section>

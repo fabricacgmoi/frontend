@@ -1,0 +1,95 @@
+<section class="scrollable">
+  <div class="slim-scroll padder-h" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px"
+    data-railopacity="0.2">
+    <div class="row m-b-md">
+      <div class="col-sm-6">
+        <h1 class="m-b-xs text-black">Alterar com Wizard</h1>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="panel panel-default panel-wizard">
+          <header class="panel-heading">
+            <div class="pull-right">
+              <a href="crud.html" class="btn btn-default btn-sm"><i class="fa fa-long-arrow-left"></i> Cancelar</a>
+            </div>
+            <h2 class="panel-title h5">Formulário</h2>
+          </header>
+          <header class="panel-heading">
+            <ul class="nav nav-tabs font-bold">
+              <li class="active">
+                <a href="#step1" data-toggle="tab">Passo 1</a>
+              </li>
+              <li>
+                <a href="#step2" data-toggle="tab">Passo 2</a>
+              </li>
+              <li>
+                <a href="#step3" data-toggle="tab">Passo 3</a>
+              </li>
+            </ul>
+          </header>
+          <article class="panel-body">
+            <h4>Validação do Fomulário</h4>
+            <div class="progress progress-xs m-t-md">
+              <div class="progress-bar bg-success" style="width: 33.3333%;"></div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="step1">
+                <form class="form" action="crud.html" method="GET" role="form">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group m-n">
+                        <label for="email" class="required">E-mail</label>
+                        <input type="email" name="email" value="admin@dominio.com" id="email" class="form-control"
+                          placeholder="Digite o e-mail" data-parsley-trigger="change" data-type="email" required="">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group m-n">
+                        <label for="website" class="required">Website</label>
+                        <input type="text" name="website" value="http://www.dominio.com" id="website"
+                          class="form-control" placeholder="Digite o website" data-parsley-trigger="change"
+                          data-type="url" required="">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="step2">
+                <form class="form" action="crud.html" method="GET" role="form">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group m-n">
+                        <label for="telefone" class="required">Telefone</label>
+                        <input type="tel" name="telefone" value="(61) 3021-0010" id="telefone"
+                          class="form-control phone_with_ddd" placeholder="(__) ____-____" data-parsley-trigger="change"
+                          required="" maxlength="14" autocomplete="off">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="step3">
+                <form class="form" action="crud.html" method="GET" role="form">
+                  <p>Conteúdo do passo 3</p>
+                  <button type="submit" class="btn btn-s-md btn-primary"><i class="fa fa-save"></i> Salvar</button>
+                </form>
+              </div>
+            </div>
+          </article>
+          <footer class="panel-footer">
+            <ul class="pager wizard no-margin">
+              <li class="previous first disabled" style="display: none;"><a href="#">Primeiro</a></li>
+              <li class="previous disabled"><a href="#"><i class="fa fa-long-arrow-left"></i> Anterior</a></li>
+              <li class="next last" style="display: none;"><a href="#">Último</a></li>
+              <li class="next"><a href="#">Próximo <i class="fa fa-long-arrow-right"></i></a></li>
+            </ul>
+          </footer>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,114 @@
+<section class="scrollable">
+  <div class="slim-scroll padder-h" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px"
+    data-railopacity="0.2">
+    <div class="row m-b-md">
+      <div class="col-sm-6">
+        <h1 class="m-b-xs text-black">Cadastro Básico</h1>
+
+        <small>Tela de cadastro básica</small>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+
+        <form class="form" action="crud.html" method="GET" role="form" data-parsley-validate="">
+          <section class="panel panel-default">
+            <header class="panel-heading">
+              <div class="pull-right">
+                <a href="crud.html" class="btn btn-default btn-sm"><i class="fa fa-long-arrow-left"></i> Cancelar</a>
+                <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Salvar</button>
+              </div>
+              <h2 class="panel-title h5">Formulário</h2>
+            </header>
+            <article class="panel-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="municipio" class="control-label required">Município</label>
+                    <select name="municipio" id="municipio" class="form-control" required="">
+                      <option value="">Selecione uma Opção</option>
+                      <option value="1">Brasília</option>
+                      <option value="2">Rio de Janeiro</option>
+                      <option value="3">Belo Horizonte</option>
+                      <option value="4">Rio Preto</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="caregoria" class="control-label required">Caregoria</label>
+                    <input type="text" name="caregoria" id="caregoria" class="form-control"
+                      placeholder="Digite o nome da caregoria" required="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="coordenacaoregional" class="control-label required">Coordenação Regional</label>
+                    <input type="text" name="coordenacaoregional" id="coordenacaoregional" class="form-control"
+                      placeholder="Digite o nome da coordenação regional" required="">
+                  </div>
+                </div>
+              </div>
+              <div class="line line-dashed b-b line-lg pull-in"></div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label class="control-label required">Descrição</label>
+                    <textarea name="descricao" id="descricao" class="form-control form-summernote" cols="30"
+                      rows="6"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="line line-dashed b-b line-lg pull-in"></div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group m-n">
+                    <label for="tipos-lotacao" class="control-label required">Tipos de Lotação</label>
+                    <div>
+                      <div class="checkbox-inline i-checks">
+                        <label>
+                          <input type="checkbox" name="tipos[lotacao]" value="1" data-parsley-mincheck="2"
+                            data-parsley-errors-container="#tipos-lotacao-errors" required=""><i></i> Opção 1
+                        </label>
+                      </div>
+                      <div class="checkbox-inline i-checks">
+                        <label>
+                          <input type="checkbox" name="tipos[lotacao]" value="2"><i></i> Opção 2
+                        </label>
+                      </div>
+                      <div class="checkbox-inline i-checks">
+                        <label>
+                          <input type="checkbox" name="tipos[lotacao]" value="3"><i></i> Opção 3
+                        </label>
+                      </div>
+                    </div>
+                    <div id="tipos-lotacao-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group m-n">
+                    <label for="lotacao-especial" class="control-label required">Lotação Especial</label>
+                    <div>
+                      <label class="switch m-n">
+                        <input type="checkbox" name="lotacao[especial]" id="lotacao-especial" value="1" required="">
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <footer class="panel-footer clearfix">
+              <div class="pull-right">
+                <a href="crud.html" class="btn btn-default btn-sm"><i class="fa fa-long-arrow-left"></i> Cancelar</a>
+                <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-save"></i> Salvar</button>
+              </div>
+            </footer>
+          </section>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
